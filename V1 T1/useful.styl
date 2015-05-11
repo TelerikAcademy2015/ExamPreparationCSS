@@ -1,0 +1,82 @@
+// ########### BLANK PAGE ###########
+body,
+header,
+section,
+footer,
+article,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+label,
+p,
+fieldset,
+nav,
+ul,
+li,
+a,
+span,
+strong,
+em
+  margin 0
+  padding 0
+  border 0
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer,
+body,
+section,
+nav,
+article,
+aside
+  display block
+
+// ########### CLEARFIX ###########
+.clearfix
+  zoom 1
+  &:after
+    content '\0020'
+    display block
+    clear both
+    height 0
+    visibility hidden
+    overflow hidden 
+    
+clearfix()
+  @extend .clearfix
+  
+// ########### FLOAT CENTER ###########
+.float_center
+  position relative
+  float left
+  left 50%
+  
+.float_center > .child_center
+  position relative
+  right 50%
+
+// ########### LINEAR GRADIENT ###########
+linear_gradient(origin, colors...)
+    
+  fallback = colors[1][0]
+
+  colors = join(', ', colors)
+  colors = unquote(colors)
+
+  background-color: fallback
+  background-image: -webkit-linear-gradient(origin, colors) // Chrome, Safari
+  background-image:    -moz-linear-gradient(origin, colors) // Firefox (3.6 - 15)
+  background-image:     -ms-linear-gradient(origin, colors) // IE 10
+  background-image:      -o-linear-gradient(origin, colors) // Opera (11.1 - 12.0) 
+  background-image:         linear-gradient(origin, colors) // W3C
