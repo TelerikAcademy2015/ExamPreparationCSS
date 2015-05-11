@@ -1,0 +1,52 @@
+@import 'useful'
+
+my-border-color = #000
+my-border-thickness = 1px
+my-border-radius = 10px
+
+html, 
+body 
+	font-family 'Courier New', Courier, 'Nimbus Mono L', monospace
+	font-size 16px
+
+#wrapper
+	width 960px
+	margin 7px 7px
+	position relative
+	
+	.menu >
+		li
+			linear_gradient(top, #36cfec, #6184de)
+			border my-border-thickness solid my-border-color
+			border-radius my-border-radius
+			padding 10px 21px
+			display inline-block
+			a
+				text-decoration none
+				color #0a1dfa
+			&:hover > a
+				padding 15px 25px
+				font-size 1.5em
+			&:hover > .content
+					display block
+				
+	.menu
+		li
+			.content
+				display none
+				position absolute
+				padding 10px 20px
+				linear_gradient(top, #fbfdfd, #94cfeb)
+				border my-border-thickness solid my-border-color
+				border-radius my-border-radius
+				ul
+					list-style-type square
+					li
+						margin 2px
+				h3
+					text-decoration underline
+					margin 17px -3px
+				p
+					margin 20px 0
+				a:hover
+						text-decoration underline        		
