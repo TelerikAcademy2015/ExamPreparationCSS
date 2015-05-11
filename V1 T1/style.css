@@ -1,0 +1,127 @@
+body,
+header,
+section,
+footer,
+article,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+label,
+p,
+fieldset,
+nav,
+ul,
+li,
+a,
+span,
+strong,
+em {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer,
+body,
+section,
+nav,
+article,
+aside {
+  display: block;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.float_center {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+.float_center > .child_center {
+  position: relative;
+  right: 50%;
+}
+html,
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#wrapper {
+  width: 960px;
+  margin: 0 5px;
+  position: relative;
+}
+.clear {
+  clear: both;
+}
+header {
+  height: 22px;
+  padding: 14px 14px;
+  background-image: url("images/header-bg.png");
+}
+header h1 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #454b48;
+  display: inline-block;
+}
+nav {
+  display: inline-block;
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  color: #454b48;
+  margin: 0 8px;
+}
+#searchBar {
+  height: 15px;
+  padding: 10px;
+  background-color: #000;
+  font-size: 14px;
+  color: #b9b9b9;
+  font-weight: normal;
+}
+#searchBar a {
+  text-decoration: none;
+  color: #b9b9b9;
+}
+#searchBar #archives {
+  float: left;
+}
+#searchBar #search {
+  float: right;
+}
+#content {
+  color: #454b48;
+}
+#content h1 {
+  margin: 16px 0;
+  font-size: 24px;
+}
+#content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 17px;
+}
