@@ -1,0 +1,125 @@
+body,
+header,
+section,
+footer,
+article,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+label,
+p,
+fieldset,
+nav,
+ul,
+li,
+a,
+span,
+strong,
+em {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer,
+body,
+section,
+nav,
+article,
+aside {
+  display: block;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.float_center {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+.float_center > .child_center {
+  position: relative;
+  right: 50%;
+}
+html,
+body {
+  font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace;
+  font-size: 16px;
+}
+#wrapper {
+  width: 960px;
+  margin: 7px 7px;
+  position: relative;
+}
+#wrapper .menu > li {
+  background-color: #6184de;
+  background-image: -webkit-linear-gradient(top, #36cfec, #6184de);
+  background-image: -moz-linear-gradient(top, #36cfec, #6184de);
+  background-image: -ms-linear-gradient(top, #36cfec, #6184de);
+  background-image: -o-linear-gradient(top, #36cfec, #6184de);
+  background-image: linear-gradient(top, #36cfec, #6184de);
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px 21px;
+  display: inline-block;
+}
+#wrapper .menu > li a {
+  text-decoration: none;
+  color: #0a1dfa;
+}
+#wrapper .menu > li:hover > a {
+  padding: 15px 25px;
+  font-size: 1.5em;
+}
+#wrapper .menu > li:hover > .content {
+  display: block;
+}
+#wrapper .menu li .content {
+  display: none;
+  position: absolute;
+  padding: 10px 20px;
+  background-color: #94cfeb;
+  background-image: -webkit-linear-gradient(top, #fbfdfd, #94cfeb);
+  background-image: -moz-linear-gradient(top, #fbfdfd, #94cfeb);
+  background-image: -ms-linear-gradient(top, #fbfdfd, #94cfeb);
+  background-image: -o-linear-gradient(top, #fbfdfd, #94cfeb);
+  background-image: linear-gradient(top, #fbfdfd, #94cfeb);
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+#wrapper .menu li .content ul {
+  list-style-type: square;
+}
+#wrapper .menu li .content ul li {
+  margin: 2px;
+}
+#wrapper .menu li .content h3 {
+  text-decoration: underline;
+  margin: 17px -3px;
+}
+#wrapper .menu li .content p {
+  margin: 20px 0;
+}
+#wrapper .menu li .content a:hover {
+  text-decoration: underline;
+}
