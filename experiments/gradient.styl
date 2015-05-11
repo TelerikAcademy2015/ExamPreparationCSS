@@ -1,0 +1,38 @@
+@import 'useful'
+
+body
+  linear_gradient(left, red, orange, yellow, green, cyan, blue, indigo, violet)
+
+.wrapper
+
+  linear_gradient(top, rgba(0,0,0,1), rgba(0,0,0,.0))
+  
+  header
+    margin 40px 20px
+    padding 10px 40px 30px
+    position relative
+    text-align center
+    h1
+      font: bold 2.2em FreeSans, Helvetica, Arial, sans-serif
+      color: rgba(255,255,255,0.5)
+    h2
+      font: bold 1.1em FreeSans, Helvetica, Arial, sans-serif
+      color: rgba(255,255,255,0.5)
+    
+article
+  margin 0 auto
+  padding 10px 40px 30px
+  position relative
+  text-align justify
+    
+  p
+    width 500px
+    margin 0 auto
+    padding 10px 40px 30px
+  
+  p:first-of-type
+    linear_gradient(top right,yellow 40%, violet 50%, cyan 60%, indigo)
+  p:nth-child(2)
+    linear_gradient(bottom, rgba(0,255,255,1), rgba(255,255,255,.0))
+  p:last-of-type
+    linear_gradient(top, #fff, #000)
