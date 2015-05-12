@@ -1,0 +1,121 @@
+body,
+header,
+section,
+footer,
+article,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+label,
+p,
+fieldset,
+nav,
+ul,
+li,
+a,
+span,
+strong,
+em {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer,
+body,
+section,
+nav,
+article,
+aside {
+  display: block;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.float_center {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+.float_center > .child_center {
+  position: relative;
+  right: 50%;
+}
+html,
+body {
+  font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+}
+#wrapper {
+  width: 960px;
+  position: relative;
+}
+#wrapper .menu {
+  margin: 5px;
+}
+#wrapper .menu li {
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border: 20px solid #6c6c6c;
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(top, #666, #fff);
+  background-image: -moz-linear-gradient(top, #666, #fff);
+  background-image: -ms-linear-gradient(top, #666, #fff);
+  background-image: -o-linear-gradient(top, #666, #fff);
+  background-image: linear-gradient(top, #666, #fff);
+}
+#wrapper .menu li h3 {
+  color: #fff;
+  margin: 6px;
+}
+#wrapper .menu li .image-container img {
+  width: 120px;
+  height: 100px;
+  border-radius: 15px;
+}
+#wrapper .menu li .subtitle {
+  padding: 10px;
+}
+#wrapper .menu li .click-here {
+  display: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+#wrapper .menu li:hover {
+  background: #6c6c6c;
+  border-color: #353535;
+}
+#wrapper .menu li:hover h3 {
+  text-decoration: underline;
+}
+#wrapper .menu li:hover img {
+  width: 140px;
+  height: 110px;
+}
+#wrapper .menu li:hover .subtitle {
+  display: none;
+}
+#wrapper .menu li:hover .click-here {
+  display: inline-block;
+}

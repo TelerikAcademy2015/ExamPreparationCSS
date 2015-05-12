@@ -1,0 +1,50 @@
+@import 'useful'
+
+box-size = 180px
+img-size-w = 120px
+img-size-h = 100px
+bg-color = #6c6c6c
+
+html, 
+body 
+	font-family Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif
+
+#wrapper
+	width 960px
+	position relative
+	
+	.menu
+		margin 5px
+		li
+			display inline-block
+			text-align center
+			width box-size
+			height box-size
+			border 20px solid bg-color
+			linear_gradient(top, #666, #fff)
+			h3
+				color #fff
+				margin 6px
+			.image-container
+				img
+					width img-size-w
+					height img-size-h
+					border-radius 15px
+			.subtitle
+				padding 10px
+			.click-here
+				display none
+				color #fff
+				text-transform uppercase
+			&:hover
+				background bg-color
+				border-color #353535
+				h3
+					text-decoration underline
+				img
+					width (img-size-w + 20)
+					height (img-size-h + 10)
+				.subtitle
+					display none
+				.click-here
+					display inline-block
