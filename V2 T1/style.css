@@ -1,0 +1,145 @@
+body,
+header,
+section,
+footer,
+article,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+label,
+p,
+fieldset,
+nav,
+ul,
+li,
+a,
+span,
+strong,
+em {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer,
+body,
+section,
+nav,
+article,
+aside {
+  display: block;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.float_center {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+.float_center > .child_center {
+  position: relative;
+  right: 50%;
+}
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+#wrapper {
+  width: 960px;
+  margin: 0 5px;
+  position: relative;
+}
+#wrapper .clear {
+  clear: both;
+}
+#wrapper header {
+  height: 57px;
+  padding: 20px 20px;
+  background-image: url("images/header-bg.png");
+}
+#wrapper header #title {
+  display: inline-block;
+}
+#wrapper header #title h1 {
+  font-size: 34px;
+  color: #efe;
+}
+#wrapper header #title h2 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #c0c0c0;
+  padding: 2px 0;
+}
+#wrapper header nav {
+  display: inline-block;
+  float: right;
+  padding: 25px 0;
+}
+#wrapper header nav ul {
+  list-style-type: none;
+}
+#wrapper header nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #c60;
+}
+#wrapper #line {
+  height: 5px;
+  background: #39c518;
+}
+#wrapper #content {
+  float: left;
+  width: 760px;
+}
+#wrapper #content p {
+  margin-bottom: 9px;
+  line-height: 17px;
+  color: #555;
+}
+#wrapper #content h1 {
+  font-size: 30px;
+  margin: 21px 0;
+  color: #59770e;
+}
+#wrapper aside {
+  float: right;
+  width: 200px;
+  margin: 20px 0;
+  color: #59770e;
+  text-transform: uppercase;
+}
+#wrapper aside hr {
+  border: 0;
+  height: 1px;
+  background: #888;
+}
+#wrapper aside input[type="search"] {
+  margin: 2px;
+  border: 1px solid #888;
+  width: 155px;
+  height: 23px;
+}

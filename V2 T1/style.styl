@@ -1,0 +1,72 @@
+@import 'useful'
+
+ugly-green = #59770e
+pretty-grey = #888
+not-so-pretty-grey = #555
+
+html, 
+body
+	font-family Arial, Helvetica, sans-serif
+	font-size 14px
+#wrapper
+	width 960px
+	margin 0 5px
+	position relative
+	.clear
+		clear both		
+	header
+		height 57px
+		padding 20px 20px
+		background-image url(images/header-bg.png)
+		#title
+			display inline-block
+			h1
+				font-size 34px
+				color #eeffee
+			h2
+				font-size 14px
+				font-weight normal
+				color #c0c0c0
+				padding 2px 0
+		nav
+			display inline-block
+			float right
+			padding 25px 0
+			ul
+				list-style-type none
+				li
+					display inline-block
+					margin 0 10px
+					font-size 18px
+					font-weight bold
+					color #c60
+	#line
+		height 5px
+		background #39c518
+	#content
+		float left
+		width 760px
+		p
+			margin-bottom 9px
+			line-height 17px
+			color not-so-pretty-grey
+		h1
+			font-size 30px
+			margin 21px 0
+			color ugly-green
+	
+	aside
+		float right
+		width 200px
+		margin 20px 0
+		color ugly-green
+		text-transform uppercase
+		hr
+			border 0
+			height 1px
+			background pretty-grey
+		input[type="search"]
+			margin 2px
+			border 1px solid pretty-grey
+			width 155px
+			height 23px
