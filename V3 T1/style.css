@@ -1,0 +1,102 @@
+body,
+header,
+section,
+footer,
+article,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+label,
+fieldset,
+nav,
+ul,
+li,
+a,
+span,
+strong,
+em {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer,
+body,
+section,
+nav,
+article,
+aside {
+  display: block;
+}
+html,
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+#wrapper {
+  width: 960px;
+  margin: 0 5px;
+  position: relative;
+}
+#wrapper header #archive ul {
+  list-style-type: none;
+  float: right;
+}
+#wrapper header #archive ul li {
+  display: inline-block;
+  margin: 0 4px;
+}
+#wrapper header #archive ul li a {
+  text-decoration: none;
+  font-size: 10px;
+  color: #333;
+}
+#wrapper header #header {
+  background-image: url("images/topnav_divider.png");
+  height: 50px;
+  padding: 15px 15px 0 30px;
+}
+#wrapper header #header #nav {
+  float: left;
+}
+#wrapper header #header #nav ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+#wrapper header #header #nav ul li {
+  display: inline-block;
+  padding: 6px 10px;
+}
+#wrapper header #header #nav ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #fff;
+}
+#wrapper header #header h1 {
+  float: right;
+  color: #fff;
+}
+#wrapper #content h1 {
+  margin: 16px 0;
+  font-size: 24px;
+}
+#wrapper #content p {
+  text-align: justify;
+}
+.clear {
+  clear: both;
+}
