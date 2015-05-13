@@ -1,0 +1,103 @@
+body,
+header,
+section,
+footer,
+article,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+label,
+p,
+fieldset,
+nav,
+ul,
+li,
+a,
+span,
+strong,
+em {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer,
+body,
+section,
+nav,
+article,
+aside {
+  display: block;
+}
+#wrapper {
+  width: 960px;
+  margin: 0 5px;
+  position: relative;
+  font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+  font-size: 16px;
+}
+#wrapper .menu {
+  list-style-type: none;
+}
+#wrapper .menu li {
+  background: #b0ff00;
+  width: 150px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 8px 0;
+  padding: 10px;
+  position: relative;
+}
+#wrapper .menu li:hover .content {
+  display: inline-block;
+  position: absolute;
+  top: -8px;
+  left: 170px;
+}
+#wrapper .menu li:hover .content li {
+  width: 500px;
+  background: #1a6f00;
+  border-radius: 10px;
+  text-align: left;
+  padding: 20px;
+}
+#wrapper .menu li:hover .content li a {
+  color: #fff;
+}
+#wrapper .menu li:hover .content li a:hover {
+  text-decoration: underline;
+}
+#wrapper .menu li:hover .content li a:hover + img {
+  display: block;
+}
+#wrapper .menu li:hover .content li img {
+  display: none;
+  padding: 5px;
+  width: 500px;
+  border-radius: 10px;
+}
+#wrapper .menu li a {
+  text-decoration: none;
+  color: #000;
+}
+#wrapper .menu li a:hover {
+  text-decoration: underline;
+}
+#wrapper .menu li .content {
+  display: none;
+}
+#wrapper .menu li .content .sub-menu {
+  list-style-type: none;
+}

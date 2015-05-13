@@ -1,0 +1,93 @@
+// ########### BLANK PAGE ###########
+body,
+header,
+section,
+footer,
+article,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+label,
+p,
+fieldset,
+nav,
+ul,
+li,
+a,
+span,
+strong,
+em
+  margin 0
+  padding 0
+  border 0
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer,
+body,
+section,
+nav,
+article,
+aside
+  display block
+  
+#wrapper
+	width 960px
+	margin 0 5px
+	position relative
+	font-family Constantina, Georgia, 'Nimbus Roman No9 L', serif
+	font-size 16px
+	.menu
+		list-style-type none
+		li
+			background #b0ff00
+			width 150px
+			border-radius 15px
+			text-align center
+			margin 8px 0
+			padding 10px
+			position relative
+			&:hover
+				.content
+					display inline-block
+					position absolute
+					top -8px
+					left 170px
+					li
+						width 500px
+						background #1a6f00
+						border-radius 10px
+						text-align left
+						padding 20px
+						a
+							color #fff
+							&:hover
+								text-decoration underline
+							&:hover +
+								img
+									display block
+						img
+							display none
+							padding 5px
+							width 500px
+							border-radius 10px
+			a
+				text-decoration none
+				color #000
+				&:hover
+					text-decoration underline
+			.content
+				display none
+				.sub-menu
+					list-style-type none
